@@ -329,7 +329,7 @@
         }
 
         /* Mobile Menu */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .hamburger {
                 display: flex;
             }
@@ -553,7 +553,7 @@
         .hero-image-back img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             background-color: var(--bg-beige);
         }
 
@@ -571,10 +571,15 @@
             transform: rotate(-3deg);
         }
 
-        @media (max-width: 968px) {
+        @media (max-width: 1024px) {
+            .hero {
+                min-height: auto;
+                padding: var(--spacing-xl) 0 var(--spacing-2xl) 0;
+            }
+
             .hero-container {
                 grid-template-columns: 1fr;
-                gap: var(--spacing-2xl);
+                gap: var(--spacing-lg);
                 text-align: center;
             }
 
@@ -592,6 +597,25 @@
 
             .hero-image-container {
                 margin-top: var(--spacing-lg);
+            }
+        }
+
+        @media (min-width: 1025px) and (max-width: 1200px) {
+            .hero-container {
+                grid-template-columns: 1.1fr 0.9fr;
+                gap: var(--spacing-lg);
+            }
+
+            .hero-content h1 {
+                font-size: clamp(1.6rem, 4vw, 3rem);
+            }
+
+            .nav-menu {
+                gap: var(--spacing-md);
+            }
+
+            .logo-text {
+                font-size: 1.2rem;
             }
         }
 
@@ -733,7 +757,7 @@
             border-radius: 5px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: var(--spacing-lg);
@@ -1050,7 +1074,7 @@
             right: -70px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .lightbox-prev {
                 left: 10px;
                 background: rgba(0, 0, 0, 0.5);
@@ -1235,7 +1259,7 @@
             display: block;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .contact-content {
                 grid-template-columns: 1fr;
             }
@@ -1404,7 +1428,7 @@
         <div class="hero-container">
             <div class="hero-content">
 
-                <h1>Art in Every Stroke,<br><span style="white-space: nowrap;">Beauty in Every Detail</span></h1>
+                <h1>Art in Every Stroke,<br><span>Beauty in Every Detail</span></h1>
                 <div class="subtitle">Henna with Gowri</div>
                 <p>Welcome to the digital home of elegant, custom-crafted henna artistry. Specializing in intricate
                     bridal mehindi, minimalist trendy motifs, and simple traditional patterns, I bring your vision to
@@ -1778,7 +1802,7 @@
                                 style="background: #25D366; color: white; border: none; text-align: center; font-size: 0.9rem; padding: 12px 20px; font-weight: 600; text-transform: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
                                 💬 WhatsApp Chat
                             </a>
-                            <a href="https://www.instagram.com/henna_with_gowri?igsh=cXN6amlhZzI2dWpu" target="_blank" class="btn"
+                            <a href="https://instagram.com/" target="_blank" class="btn"
                                 style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; border: none; text-align: center; font-size: 0.9rem; padding: 12px 20px; font-weight: 600; text-transform: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
                                 📷 Instagram DM
                             </a>
@@ -1840,7 +1864,7 @@
     <footer>
         <div class="footer-content">
             <div class="social-icons">
-                <a href="https://www.instagram.com/henna_with_gowri?igsh=cXN6amlhZzI2dWpu" target="_blank" title="Instagram">📸</a>
+                <a href="https://instagram.com/" target="_blank" title="Instagram">📸</a>
                 <a href="https://wa.me/91XXXXXXXXXX" target="_blank" title="WhatsApp">💬</a>
                 <a href="#" title="Pinterest">📌</a>
             </div>
